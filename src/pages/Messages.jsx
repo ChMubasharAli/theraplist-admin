@@ -79,7 +79,7 @@ function Messages() {
     if (confirmDelete) {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_BACKEND_URL}/${id}`,
+          `${import.meta.env.VITE_BACKEND_URL}/messages/${id}`,
           {
             method: "DELETE",
           },
